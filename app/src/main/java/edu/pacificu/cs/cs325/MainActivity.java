@@ -1,6 +1,8 @@
 package edu.pacificu.cs.cs325;
 
 import android.os.Bundle;
+import android.widget.Button;
+import android.widget.EditText;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -12,6 +14,10 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
+    private EditText mcMultiLine;
+    private Button mcBtnRead;
+    private Button mcBtnWrite;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,6 +28,10 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
+        mcMultiLine = findViewById(R.id.editTextTextMultiLine);
+        mcBtnRead = findViewById(R.id.btnRead);
+        mcBtnWrite = findViewById(R.id.btnWrite);
 
         ArrayList<Course> cCourseList = new ArrayList<>();
         buildCourseList(cCourseList);

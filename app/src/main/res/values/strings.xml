@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">DataExample</string>
+    <string name="Write">WriteDB\n</string>
+    <string name="Read">ReadDB</string>
 </resources>
